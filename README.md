@@ -22,7 +22,7 @@ You can also alias it with rust in `.bashrc`
 
 # Installation
 You can clone this repo in `Downloads` folder:
-git clone https://github.com/wassou93/nvim.git 
+`git clone https://github.com/wassou93/nvim.git` 
 Then copy the nvim folder to `~/.config`
 
 # Optional installation steps
