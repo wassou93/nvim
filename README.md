@@ -2,7 +2,7 @@
 
 This repository contains Neovim dot files for **wassou93**.
 
-# Prerequisites
+## Prerequisites
 
 To build Neovim from source, you need to have the following pre-requisites installed on your system:
 
@@ -61,16 +61,16 @@ sudo rm /usr/local/bin/nvim
 sudo rm -r /usr/local/share/nvim/
 ```
 
-## Rust
+### Install Rust
 `curl --proto '=https' --tlsv2.2 -sSf https://sh.rustup.rs | sh`
 
-## Rust Analyser
+### Install Rust Analyser
 Install rust-analyzer:
 `rustup component add rust-analyzer --toolchain stable`
 You can also install rust-src for better debugging
 `rustup component add rust-src`
 
-## Node.js
+### Install Node.js
 
 - **nodejs**
   
@@ -83,7 +83,7 @@ You can also install rust-src for better debugging
     sudo apt install npm
     ```
    
-## Tree-sitter
+### Install Tree-sitter
 
 - Install tree-sitter
 
@@ -91,12 +91,12 @@ You can also install rust-src for better debugging
    sudo npm install -g tree-sitter
     ```
 
-## EVCXR - Rust terminal Interpreter
+### Install EVCXR - Rust terminal Interpreter
 Install using cargo:
 `cargo install evcxr_repl`
 You can also alias it with rust in `.bashrc`
 
-# Installation
+## Neovim Dotfiles Installation
 
 1. Clone this repository into the `Downloads` folder:
 
@@ -112,9 +112,7 @@ You can also alias it with rust in `.bashrc`
 
     This ensures the configuration is in the correct location.
 
-# Optional Installation Steps
-
-1.Install Packer extension manager using below command:
+2. Install Packer extension manager using below command:
 
 > Unix, Linux Installation
 
@@ -123,14 +121,13 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-If you use Arch Linux, there is also [an AUR
-package](https://aur.archlinux.org/packages/nvim-packer-git/).
+> If you use Arch Linux, there is also [an AUR package](https://aur.archlinux.org/packages/nvim-packer-git/).
 
-2. Open `.config/nvim/` directory in neovim.
-3. Press `q` mutliple times to ignore errors.
-4. Press <leader>pv to return to nvim Explrer
-5. Go to `./lua/wassou/packer.lua`
-6. `:so` to source the file
+3. Open `.config/nvim/` directory in neovim.
+4. Press `q` mutliple times to ignore errors.
+5. Press <leader>pv to return to nvim Explrer
+6. Go to `./lua/wassou/packer.lua`
+7. `:so` to source the file
 8. Sync (add/update/remove) extensions:
 
     ```vim
@@ -160,7 +157,7 @@ package](https://aur.archlinux.org/packages/nvim-packer-git/).
 
     This Lua command enables transparency.
 
-# Troubleshooting
+## Troubleshooting
 
 - If you're getting: `nvim-treesitter[vimdoc]: Error during compilation`
 ```bash
