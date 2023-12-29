@@ -13,10 +13,11 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	use({ 
-		'rose-pine/neovim', 
+	use({
+		'rose-pine/neovim',
 		as = 'rose-pine',
-		config = function() 
+		config = function()
+            require('rose-pine').setup({ disable_italics = true })
 			vim.cmd('colorscheme rose-pine')
 		end
 	})
