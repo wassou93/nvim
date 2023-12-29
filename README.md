@@ -125,7 +125,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 3. Open `.config/nvim/` directory in neovim.
 4. Press `q` mutliple times to ignore errors.
-5. Press <leader>pv to return to nvim Explrer
+5. Press `<leader>pv` to return to nvim Explrer
 6. Go to `./lua/wassou/packer.lua`
 7. `:so` to source the file
 8. Sync (add/update/remove) extensions:
