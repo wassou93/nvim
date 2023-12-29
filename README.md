@@ -1,5 +1,6 @@
-# Neovim dot files 
-Neovim dot files repo for --wassou93 
+# Neovim Dot Files
+
+This repository contains Neovim dot files for **wassou93**.
 
 # Prerequisites
 
