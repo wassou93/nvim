@@ -1,0 +1,2 @@
+require("wassou")
+print("hello")
