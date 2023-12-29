@@ -2,8 +2,6 @@
 
 This repository contains Neovim dot files for **wassou93**.
 
-Sure, I can help you with that. Here is the updated section for your README.md file:
-
 # Prerequisites
 
 To build Neovim from source, you need to have the following pre-requisites installed on your system:
@@ -20,23 +18,28 @@ To build Neovim from source, you need to have the following pre-requisites insta
 
 To install latest Neovim, the best option is to build it from source and integrate it with your system, follow these steps:
 
-1. **Clone the Neovim repository:**
+1. **Remove previous nvim installations:**
+   ```bash
+   sudo apt remove neovim neovim-runtime
+   sudo apt autoremove
+   ```
+3. **Clone the Neovim repository:**
    ```bash
    git clone https://github.com/neovim/neovim
    ```
-2. **Navigate to the cloned repository:**
+4. **Navigate to the cloned repository:**
    ```bash
    cd neovim
    ```
-3. **Checkout the stable branch:**
+5. **Checkout the stable branch:**
    ```bash
    git checkout stable
    ```
-4. **Build Neovim:**
+6. **Build Neovim:**
    ```bash
    make CMAKE_BUILD_TYPE=RelWithDebInfo
    ```
-5. **Install Neovim:**
+7. **Install Neovim:**
    - For Ubuntu/Debian based systems:
      ```bash
      cd build && cpack -G DEB && sudo apt install ./nvim-linux64.deb
@@ -57,14 +60,6 @@ Or delete the `CMAKE_INSTALL_PREFIX` artifacts:
 sudo rm /usr/local/bin/nvim
 sudo rm -r /usr/local/share/nvim/
 ```
-I hope this helps! Let me know if you have any other questions.
-
-Source: Conversation with Bing, 12/29/2023
-(1) Home · neovim/neovim Wiki · GitHub. https://github.com/neovim/neovim/wiki/Building-Neovim.
-(2) Building Neovim from source - DEV Community. https://dev.to/asyncedd/building-neovim-from-source-1794.
-(3) Building Neovim from Source | dxt.rs. https://dxt.rs/category/editors/nvim/building-neovim-from-source/.
-(4) How to install Neovim from source on Ubuntu 20.04 LTS. https://carlosahs.medium.com/how-to-install-neovim-from-source-on-ubuntu-20-04-lts-524b3a91b4c4.
-(5) undefined. https://github.com/neovim/neovim.git.
 
 ## Rust
 `curl --proto '=https' --tlsv2.2 -sSf https://sh.rustup.rs | sh`
