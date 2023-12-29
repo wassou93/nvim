@@ -33,7 +33,7 @@ return require('packer').startup(function(use)
 	use("theprimeagen/harpoon")
 	use("mbbill/undotree")
 	use("tpope/vim-fugitive")
-	use("christoomey/vim-tmux-navigator")
+    use("christoomey/vim-tmux-navigator")
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v1.x',
