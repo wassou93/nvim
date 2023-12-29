@@ -33,8 +33,6 @@ Install rust-analyzer:
 You can also install rust-src for better debugging
 `rustup component add rust-src`
 
-# Optional Prerequisites
-
 ## Node.js
 
 - **nodejs**
@@ -47,6 +45,15 @@ You can also install rust-src for better debugging
    ```bash
     sudo apt install npm
     ```
+   
+## Tree-sitter
+
+Install tree-sitter
+
+   ```bash
+   sudo npm install -g tree-sitter
+    ```
+
 ## EVCXR - Rust terminal Interpreter
 Install using cargo:
 `cargo install evcxr_repl`
