@@ -88,7 +88,11 @@ You can also install rust-src for better debugging
 - Install tree-sitter
 
    ```bash
-   sudo npm install -g tree-sitter
+   yarn global add tree-sitter-cli
+   # Or
+   sudo apt install tree-sitter-cli
+   # Or
+   cargo install tree-sitter-cli
     ```
 
 ### Install EVCXR - Rust terminal Interpreter
