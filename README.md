@@ -2,27 +2,69 @@
 
 This repository contains Neovim dot files for **wassou93**.
 
+Sure, I can help you with that. Here is the updated section for your README.md file:
+
 # Prerequisites
 
-# NVIM v0.9.4 or later
+To build Neovim from source, you need to have the following pre-requisites installed on your system:
 
-### Quick Installation Guide
+- libtool
+- autoconf
+- automake
+- cmake
+- libncurses5-dev
+- g++
+- gettext
 
-To install Neovim from a tarball and integrate it with your system, follow these steps:
+### Quick Neovim Installation Guide
 
-1. **Download the Tarball:**
-   Download the `nvim-linux64.tar.gz` tarball from [Neovim releases](https://github.com/neovim/neovim/releases).
+To install latest Neovim, the best option is to build it from source and integrate it with your system, follow these steps:
 
-2. **Extract the Tarball:**
-   Extract the contents of the tarball using the following command:
+1. **Clone the Neovim repository:**
    ```bash
-   tar xzvf nvim-linux64.tar.gz
-3. **Move to System Binaries:**
+   git clone https://github.com/neovim/neovim
+   ```
+2. **Navigate to the cloned repository:**
    ```bash
-   sudo mv nvim-linux64 /usr/local/
-4. **Create Symbolic Links:**
+   cd neovim
+   ```
+3. **Checkout the stable branch:**
    ```bash
-   sudo ln -s /usr/local/nvim-linux64/bin/nvim /usr/local/bin/nvim
+   git checkout stable
+   ```
+4. **Build Neovim:**
+   ```bash
+   make CMAKE_BUILD_TYPE=RelWithDebInfo
+   ```
+5. **Install Neovim:**
+   - For Ubuntu/Debian based systems:
+     ```bash
+     cd build && cpack -G DEB && sudo apt install ./nvim-linux64.deb
+     ```
+   - For other systems:
+     ```bash
+     sudo make install
+     ```
+
+Note: The default installation location is `/usr/local`.
+
+To uninstall Neovim, you can either run the following command:
+```bash
+sudo cmake --build build/ --target uninstall
+```
+Or delete the `CMAKE_INSTALL_PREFIX` artifacts:
+```bash
+sudo rm /usr/local/bin/nvim
+sudo rm -r /usr/local/share/nvim/
+```
+I hope this helps! Let me know if you have any other questions.
+
+Source: Conversation with Bing, 12/29/2023
+(1) Home · neovim/neovim Wiki · GitHub. https://github.com/neovim/neovim/wiki/Building-Neovim.
+(2) Building Neovim from source - DEV Community. https://dev.to/asyncedd/building-neovim-from-source-1794.
+(3) Building Neovim from Source | dxt.rs. https://dxt.rs/category/editors/nvim/building-neovim-from-source/.
+(4) How to install Neovim from source on Ubuntu 20.04 LTS. https://carlosahs.medium.com/how-to-install-neovim-from-source-on-ubuntu-20-04-lts-524b3a91b4c4.
+(5) undefined. https://github.com/neovim/neovim.git.
 
 ## Rust
 `curl --proto '=https' --tlsv2.2 -sSf https://sh.rustup.rs | sh`
