@@ -32,26 +32,70 @@ Install rust-analyzer:
 You can also install rust-src for better debugging
 `rustup component add rust-src`
 
-# Optional preprequisites
+# Optional Prerequisites
 
-## Node
-nodejs
-npm
+## Node.js
 
+- **nodejs**
+  
+   ```bash
+    sudo apt install nodejs
+    ```
+- **npm**
+  
+   ```bash
+    sudo apt install npm
+    ```
 ## EVCXR - Rust terminal Interpreter
 Install using cargo:
 `cargo install evcxr_repl`
 You can also alias it with rust in `.bashrc`
 
 # Installation
-You can clone this repo in `Downloads` folder:
-`git clone https://github.com/wassou93/nvim.git` 
-Then copy the nvim folder to `~/.config`
 
-# Optional installation steps
-`:PackerSync` to sync (add/update/remove) extensions
-`:LspInfo` to get installed LSPs
-`:Mason` to install LSPs
-You can scroll and press i to install the wanted lsp server
-make sure backend is already installed in the system
-`:lua ColorMyPencils()` to enable transparancy
+1. Clone this repository into the `Downloads` folder:
+
+    ```bash
+    git clone https://github.com/wassou93/nvim.git
+    ```
+
+    After cloning, copy the `nvim` folder to `~/.config`.
+
+    ```bash
+    cp -r nvim ~/.config/
+    ```
+
+    This ensures the configuration is in the correct location.
+
+# Optional Installation Steps
+
+1. Sync (add/update/remove) extensions:
+
+    ```vim
+    :PackerSync
+    ```
+
+2. Get installed Language Server Protocols (LSPs):
+
+    ```vim
+    :LspInfo
+    ```
+
+3. Install Language Server Protocols using Mason:
+
+    ```vim
+    :Mason
+    ```
+
+    - Scroll and press `i` to install the desired LSP server.
+    - Ensure the backend is already installed on the system.
+
+4. Enable transparency:
+
+    ```vim
+    :lua ColorMyPencils()
+    ```
+
+    This Lua command enables transparency.
+
+Now, your Neovim setup is ready to go!
