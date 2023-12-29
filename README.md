@@ -178,4 +178,22 @@ vi ~/.local/share/nvim/site/pack/packer/start/nvim-treesitter/lua/nvim-treesitte
     }
    ...
   ```
-Now, your Neovim setup is ready to go!
+
+## Install TMux 
+1. Install TMux using below command:
+```bash
+sudo apt install tmux 
+```
+2. Then copy configuration file from nvim repo:
+```bash
+cp -r ./tmux ~/.config/
+```
+3. Install TPM (TMux Plugin Manager):
+```bash
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+4. Open `~/.config/tmux/tmux.conf` file in nvim 
+5. Press `<C-b>r` to source `tmux.conf`
+6. Press `<C-s>I` to install tmux plugins
+
+Now, your Neovim and TMux setups are ready to go!
