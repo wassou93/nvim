@@ -94,6 +94,14 @@ You can also install rust-src for better debugging
    # Or
    cargo install tree-sitter-cli
     ```
+### Install python3-pip and python3-neovim
+
+- Install python3-pip and python3-neovim using below commands:
+
+  ```bash
+  sudo apt install python3-pip
+  sudo apt install python3-neovim
+  ```
 
 ### Install EVCXR - Rust terminal Interpreter
 Install using cargo:
