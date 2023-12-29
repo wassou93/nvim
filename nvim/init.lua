@@ -1,2 +1,2 @@
 require("wassou")
-print("hello")
+print("Hello to Wassou custom Neovim!")
