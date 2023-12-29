@@ -9,7 +9,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup component add rust-analyzer --toolchain stable
 rustup component add rust-src
 
-# Optional
+# Optional preprequisites
 # Node
 nodejs
 npm
@@ -17,9 +17,10 @@ npm
 cargo install evcxr_repl
 
 # Installation
+git clone https://github.com/wassou93/nvim.git 
+After tthat copy nvim folder to `~/.config`
 
-
-
+# Optional installation steps
 :LspInfo to get installed LSPs
 :Mason to install LSPs
 you can scroll and press i to installed wanted lsp
