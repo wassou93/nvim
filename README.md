@@ -109,13 +109,14 @@ You can also install rust-src for better debugging
    ```bash
    sudo npm install --global live-server
     ```
+   
 - *NOTE:* You might want to edit `/usr/local/node-v20.11.0-linux-x64/lib/node_modules/live-server/live-server.js` change version number as per your node version.
 - Open this file via editor and make sure there is no hidden carriage returns at the end of the first line:
-   ``lua
+   ```lua
    #!/usr/bin/env node -- delete this new line and create it again
    var path = require('path');
    ...
-    ```
+   ``` 
 ### Install EVCXR - Rust terminal Interpreter
 Install using cargo:
 `cargo install evcxr_repl`
