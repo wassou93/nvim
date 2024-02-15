@@ -47,3 +47,9 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+
+-- My own keybidings 
+--
+-- applie @q macro shortcut in visual mode
+vim.keymap.set('x', '<leader>q', ':normal @q<CR>', { noremap = true, silent = true })
+

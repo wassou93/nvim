@@ -1,0 +1,197 @@
+live_config_reload = true
+working_directory = "None"
+
+[env]
+TERM = "xterm-256color"
+WINIT_X11_SCALE_FACTOR = "1"
+LANG = "en_US.UTF-8"
+LC_CTYPE = "en_US.UTF-8"
+
+[window]
+dynamic_padding = false
+decorations = "full"
+title = "Alacritty"
+opacity = 0.95
+decorations_theme_variant = "Dark"
+
+[window.dimensions]
+columns = 160
+lines = 40
+
+[window.class]
+instance = "Alacritty"
+general = "Alacritty"
+
+[window.padding]
+x = 6
+y = 6
+
+[scrolling]
+history = 100000
+multiplier = 3
+
+[font]
+size = 12
+
+[font.normal]
+family = "FiraCode Nerd Font Propo"
+style = "Regular"
+
+[font.bold]
+family = "FiraCode Nerd Font Propo"
+style = "Medium"
+
+[font.italic]
+family = "FiraCode Nerd Font Propo"
+style = "Italic"
+
+[font.bold_italic]
+family = "FiraCode Nerd Font Propo"
+style = "Medium Italic"
+
+[font.offset]
+x = 0
+y = 1
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>	"
+save_to_clipboard = true
+
+[cursor]
+style = "Block"
+vi_mode_style = "Block"
+unfocused_hollow = true
+thickness = 0.1
+
+[mouse]
+hide_when_typing = true
+bindings = [
+    { mouse = "Middle", action = "PasteSelection" },
+]
+
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "PasteSelection"
+key = "Insert"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Plus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "Paste"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "Copy"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ClearLogNotice"
+key = "L"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\f"
+key = "L"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "PageUp"
+mode = "~Alt"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "PageDown"
+mode = "~Alt"
+mods = "None"
+
+[[keyboard.bindings]]
+action = "ScrollToTop"
+key = "Home"
+mode = "~Alt"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ScrollToBottom"
+key = "End"
+mode = "~Alt"
+mods = "Shift"
+
+
+
+[colors.primary]
+background = '#191724'
+foreground = '#e0def4'
+
+[colors.cursor]
+text = '#e0def4'
+cursor = '#524f67'
+
+[colors.vi_mode_cursor]
+text = '#e0def4'
+cursor = '#524f67'
+
+[colors.selection]
+text = '#e0def4'
+background = '#403d52'
+
+[colors.normal]
+black = '#26233a'
+red = '#eb6f92'
+green = '#31748f'
+yellow = '#f6c177'
+blue = '#9ccfd8'
+magenta = '#c4a7e7'
+cyan = '#ebbcba'
+white = '#e0def4'
+
+[colors.bright]
+black = '#6e6a86'
+red = '#eb6f92'
+green = '#31748f'
+yellow = '#f6c177'
+blue = '#9ccfd8'
+magenta = '#c4a7e7'
+cyan = '#ebbcba'
+white = '#e0def4'
+
+[colors.hints]
+start = {foreground = '#908caa', background = '#1f1d2e' }
+end = { foreground = '#6e6a86', background = '#1f1d2e' }
