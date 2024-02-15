@@ -218,8 +218,12 @@ cp -r ./tmux ~/.config/
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
-4. Open `~/.config/tmux/tmux.conf` file in nvim 
-5. Press `<C-b>r` to source `tmux.conf`
-6. Press `<C-s>I` to install tmux plugins
 
-Now, your Neovim and TMux setups are ready to go!
+## Install Alacritty 
+1. Install Alacritty using package manager or build it from source.
+2. Then copy configuration file from nvim repo:
+```bash
+cp -r ./alacritty ~/.config/
+```
+
+Now, your Neovim, TMux and Alacritty setups are ready to go!
